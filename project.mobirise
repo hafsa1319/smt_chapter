@@ -1,0 +1,142 @@
+{
+  "settings": {
+    "name": "Site-12-26_2236",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#ffe161",
+        "infoColor": "#ffe161",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#212428",
+        "#16181c",
+        "#ff5d22"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "uniqCompNum": 5,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-section-title, .mbr-section-subtitle": {
+              "text-align": "center"
+            },
+            ".cards-wrap": {
+              "background": "@cardsBg",
+              "padding": "50px",
+              "padding-bottom": "48px",
+              "padding-top": "80px",
+              "& when (@showBorder)": {
+                "border": "1px solid @borderColor"
+              },
+              ".features-title": {
+                "border-bottom": "1px solid @titleLineColor",
+                "padding-bottom": "1em"
+              },
+              ".card": {
+                "display": "flex",
+                "flex-direction": "row",
+                "position": "relative",
+                "margin-bottom": "2rem",
+                "&-img": {
+                  "text-align": "right",
+                  "border-radius": ".25rem",
+                  "&-inner": {
+                    "vertical-align": "middle",
+                    "margin-top": "5px",
+                    ".mbr-iconfont": {
+                      "background": "@iconsBgColor",
+                      "border-color": "@iconsBgColor",
+                      "position": "relative",
+                      "width": "22px",
+                      "height": "22px",
+                      "border": "2px solid @iconsBorderColor",
+                      "border-radius": "18px",
+                      "display": "inline-block",
+                      "text-align": "center",
+                      "vertical-align": "-3px",
+                      "color": "@iconsColor",
+                      "&::before": {
+                        "position": "absolute",
+                        "top": "-2px",
+                        "right": "-4px",
+                        "font-weight": "bold"
+                      }
+                    }
+                  }
+                },
+                ".card-wrapper": {
+                  "margin-left": "15px",
+                  "border-radius": "4px",
+                  ".bottom-line": {
+                    ".mbr-text": {
+                      "color": "#999999"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "features10",
+          "_sourceTheme": "directm4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features10 directm4_features10\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax, 'mbr-fullscreen': fullScreen}\">\n\n\t<!-- Block parameters controls (Blue \"Gear\" panel) -->\n\t<mbr-parameters>\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\">\n\t\t<header>Show/Hide</header>\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showMainText\" checked>\n\t\t<input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n\t\t<header>Cards</header>\n\t\t<input type=\"checkbox\" title=\"Border\" name=\"showBorder\">\n\t\t<input type=\"checkbox\" title=\"Icons\" name=\"showIcons\" checked>\n\t\t<input type=\"checkbox\" title=\"Main Title\" name=\"showBlocksTitle\">\n\t\t<input type=\"color\" title=\"Title Line\" name=\"titleLineColor\" value=\"#eeeeee\" condition=\"showBlocksTitle\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitleCards\" checked>\n\t\t<input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n\t\t<input type=\"color\" title=\"Bg\" name=\"cardsBg\" value=\"#ffffff\">\n\t\t<input type=\"color\" title=\"Border\" name=\"borderColor\" value=\"#333333\" condition=\"showBorder\">\n\t\t<input type=\"color\" title=\"Icons Bg\" name=\"iconsBgColor\" value=\"#ff5d22\" condition=\"showIcons\">\n\t\t<input type=\"color\" title=\"Icons Border\" name=\"iconsBorderColor\" value=\"#ffffff\" condition=\"showIcons\">\n\t\t<input type=\"color\" title=\"Icons\" name=\"iconsColor\" value=\"#000000\" condition=\"showIcons\">\n\t\t<select title=\"Cards\" name=\"cardsAmount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\">4</option>\n\t\t\t<option value=\"5\">5</option>\n\t\t\t<option value=\"6\">6</option>\n\t\t\t<option value=\"7\">7</option>\n\t\t\t<option value=\"8\">8</option>\n\t\t\t<option value=\"9\">9</option>\n\t\t\t<option value=\"10\" selected>10</option>\n\t\t\t<option value=\"11\">11</option>\n\t\t\t<option value=\"12\">12</option>\n\t\t</select>\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/directm4/components/_images/background2.jpg\" parallax>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n\t\t</fieldset>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n\t</mbr-parameters>\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div class=\"row\" mbr-cards=\"bootstrap\">\n\t\t\t<div class=\"title col-12 mb-5\">\n\t\t\t\t<h4 class=\"mbr-section-title mbr-fonts-style align-center\" mbr-theme-style=\"display-2\" data-app-selector=\".title .mbr-section-title, .title .mbr-section-btn\" mbr-if=\"showMainTitle\"><b>\n\t\t\t\t\tKitabın Bölümleri</b></h4>\n\t\t\t\t<h5 class=\"mbr-section-subtitle mbr-fonts-style align-center\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".title .mbr-section-subtitle, .title .mbr-section-btn\">\n\t\t\t\t\tFeatures Subtitle\n\t\t\t\t</h5>\n\t\t\t\t<p class=\"mbr-text mbr-fonts-style align-center\" mbr-theme-style=\"display-7\" mbr-if=\"showMainText\" data-app-selector=\".title .mbr-text, .title .mbr-section-btn\">\n\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, sed iusto corrupti explicabo.\n\t\t\t\t\tDignissimos, harum. Adipisci dolorem odit minima assumenda nostrum quam nihil, iusto, ad eligendi\n\t\t\t\t\tlaudantium doloribus eius reiciendis.</p>\n\t\t\t\t<div class=\"buttons-wrap align-center align-self-center\" mbr-if=\"showButtons\">\n\t\t\t\t\t<div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn\" mbr-if=\"showButtons\">\n\t\t\t\t\t\t<a class=\"btn btn-md btn-primary\" href=\"https://mobiri.se/\" data-app-placeholder=\"Type Text\">GET\n\t\t\t\t\t\t\tSTARTED</a>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"cards-wrap row\">\n\t\t\t\t<div class=\"col-12\">\n\t\t\t\t\t<div class=\"row justify-content-center\">\n\t\t\t\t\t\t<div class=\"col-12 mb-4\" mbr-if=\"showBlocksTitle\">\n\t\t\t\t\t\t\t<h6 class=\"features-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".cards-wrap .features-title\">\n\t\t\t\t\t\t\t\tFor business\n\t\t\t\t\t\t\t</h6>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>Anatomiye Giriş</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>1\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tKemikler</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>2\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tEklemler</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>3\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tKaslar</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>4\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tSolunum</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>5\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tDolaşım</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>6\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tSindirim</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>7\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tÜrogenital</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>8\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tNöroanatomi</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>9\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title\"><b>\n\t\t\t\t\t\t\t\t\t\tDuyu</b></h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat dui, velit nibh dui, cras commodo.\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>10\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t\t\t\tSpecial Issue\n\t\t\t\t\t\t\t\t\t</h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illo error\n\t\t\t\t\t\t\t\t\t\tvoluptatibus\n\t\t\t\t\t\t\t\t\t\tpossimus\n\t\t\t\t\t\t\t\t\t\tnobis quos minima pariatur aperiam, sunt commodi incidunt nam iusto ipsa\n\t\t\t\t\t\t\t\t\t\tdistinctio\n\t\t\t\t\t\t\t\t\t\tipsam!\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"card col-12 col-md-6\" mbr-if=\"cardsAmount>11\">\n\t\t\t\t\t\t\t<div class=\"card-img\" mbr-if=\"showIcons\">\n\t\t\t\t\t\t\t\t<div class=\"card-img-inner\">\n\t\t\t\t\t\t\t\t\t<i mbr-icon class=\"mbr-iconfont mbri-success\"></i>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"card-wrapper\">\n\t\t\t\t\t\t\t\t<div class=\"top-line\" mbr-if=\"showTitleCards\">\n\t\t\t\t\t\t\t\t\t<h6 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".card-title\">\n\t\t\t\t\t\t\t\t\t\tSpecial Issue\n\t\t\t\t\t\t\t\t\t</h6>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"bottom-line\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".cards-wrap .card .card-wrapper .bottom-line .mbr-text\">\n\t\t\t\t\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illo error\n\t\t\t\t\t\t\t\t\t\tvoluptatibus\n\t\t\t\t\t\t\t\t\t\tpossimus\n\t\t\t\t\t\t\t\t\t\tnobis quos minima pariatur aperiam, sunt commodi incidunt nam iusto ipsa\n\t\t\t\t\t\t\t\t\t\tdistinctio\n\t\t\t\t\t\t\t\t\t\tipsam!\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</section>",
+          "_cid": "tr9yFpcj31",
+          "_anchor": "features10-4",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
